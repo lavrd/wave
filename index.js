@@ -23,22 +23,6 @@ const action = (e) => {
   point.setAttribute('transform', 'translate(' + (dx - pointCX) + ',' + dy + ')');
 };
 
-// trace();
-const trace = () => {
-
-  for (let i = 0.5; i < 200; i += 0.25) {
-
-    const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-
-    circle.setAttributeNS(null, 'cx', i);
-    circle.setAttributeNS(null, 'cy', (sin(i) + pointCY));
-    circle.setAttributeNS(null, 'r', 0.25);
-    circle.setAttributeNS(null, 'fill', '#A9927D');
-
-    root.appendChild(circle);
-  }
-};
-
 const sin = (x) => {
 
   //
@@ -52,5 +36,22 @@ const sin = (x) => {
   // d - shift graph along Ox axis. as d increases, than graph moves in negative direction of abscissa
   //
 
-  return a + b * Math.sin(c * x + d)
+  return a + b * Math.sin(c * x + d);
 };
+
+const trace = () => {
+
+  for (let i = 0.5; i < 200; i += 0.25) {
+
+    const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+
+    circle.setAttributeNS(null, 'cx', i);
+    circle.setAttributeNS(null, 'cy', (sin(i) + pointCY));
+    circle.setAttributeNS(null, 'r', '0.25');
+    circle.setAttributeNS(null, 'fill', '#A9927D');
+
+    root.appendChild(circle);
+  }
+};
+
+// trace();
