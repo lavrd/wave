@@ -1,50 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="icon" href="./map.png" type="image/png"/>
-
-  <link rel="stylesheet" href="index.css"/>
+  <link rel="icon" href="./map.png" type="image/png" />
+  <link rel="stylesheet" href="index.css" />
 
   <title>Wave</title>
 </head>
 
 <body>
-<section>
-  <h1>Wave</h1>
+  <section>
+    <h1>Wave</h1>
 
-  <section class="hero">
-    <svg
-      class="wave"
-      id="root"
-      xmlns="http://www.w3.org/2000/svg"
-      version="1.1"
-      x="0px" y="0px"
-      viewBox="0 0 200 100"
-      onmousemove="action(evt)"
-    >
-      <path
-        id="wave"
-        d="M0 50 C 40 10, 60 10, 100 50 C 140 90, 160 90, 200 50"
-        fill="transparent"
-        stroke-width="2.5"
-        stroke="#0A0908"
-      ></path>
-      <circle
-        id="point"
-        cy="20"
-        cx="50"
-        r="5"
-        stroke-width="0.5"
-        stroke="#0A0908"
-        fill="#F2F4F3"
-      ></circle>
-    </svg>
+    <section class="hero">
+      <svg class="wave" id="root" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 200 100"
+        onmousemove="action(evt)">
+        <path id="wave" d="M0 50 C 40 10, 60 10, 100 50 C 140 90, 160 90, 200 50" fill="transparent" stroke-width="2.5"
+          stroke="#0A0908"></path>
+        <circle id="point" cy="20" cx="50" r="5" stroke-width="0.5" stroke="#0A0908" fill="#F2F4F3"></circle>
+      </svg>
+    </section>
   </section>
-</section>
 
-<script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
+
 </html>
